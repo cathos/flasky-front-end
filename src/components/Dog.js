@@ -1,19 +1,12 @@
 import React from "react";
 
-const Dog = () => {
-  const newDog = {
-    id: "id",
-    name: "name",
-    age: "age",
-    breed: "breed",
-    chip: "",
-  };
-
+const Dog = (props) => {
   return (
-    <section>
-      <h3>This is a dog</h3>
-      <p>{newDog.name}</p>
-    </section>
+    <li>
+      <h3>{props.name}</h3>
+      <h4>Favorite Toy: {props.favoriteToy}</h4>
+      <h4>Chip Number: {props.chipNumber}</h4>
+    </li>
   );
 };
 
